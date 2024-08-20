@@ -12,3 +12,29 @@ Live Demo | https://abdelrhmanhisham000.github.io/Frontend-Mentor/try2/
 
 ### Project 3: [Product preview card component]
 Live Demo | https://abdelrhmanhisham000.github.io/Frontend-Mentor/try3/
+
+### Project 4: [Order summary component]
+Live Demo | https://abdelrhmanhisham000.github.io/Frontend-Mentor/try4/
+
+### Project 5: [NFT preview card component]
+Live Demo | https://abdelrhmanhisham000.github.io/Frontend-Mentor/try5/
+
+### Project 6: [Profile card component]
+Live Demo | https://abdelrhmanhisham000.github.io/Frontend-Mentor/try6/
+
+### Project 7: [3-column preview card component]
+Live Demo | https://abdelrhmanhisham000.github.io/Frontend-Mentor/try7/
+
+### Project 8: [Social proof section]
+Live Demo | https://abdelrhmanhisham000.github.io/Frontend-Mentor/try8/
+
+### Project 9: [Testimonials grid section]
+Live Demo | https://abdelrhmanhisham000.github.io/Frontend-Mentor/try9/
+
+### Project 10: [Single price grid component]
+Live Demo | https://abdelrhmanhisham000.github.io/Frontend-Mentor/try10/
+
+### Project 11: [Fylo data storage component]
+Live Demo | https://abdelrhmanhisham000.github.io/Frontend-Mentor/try11/
+
+
