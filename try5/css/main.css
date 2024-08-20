@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Colors */
+
+  /* ### Primary */
+
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+
+  /* ### Neutral */
+
+  --Very-dark-blue-2: hsl(217, 54%, 11%);
+  --Very-dark-blue-1: hsl(216, 50%, 16%);
+  --Very-dark-blue-3: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+body {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  display: grid;
+  place-content: center;
+  background-color: var(--Very-dark-blue-2);
+  min-height: 100vh;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+}
+
+section {
+  max-width: 30rem;
+  background-color: var(--Very-dark-blue-1);
+  border-radius: 15px;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
+  margin: 100px 0;
+}
+@media (max-width: 767px) {
+  section {
+    margin: 14px;
+  }
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.img img {
+  width: 85%;
+  border-radius: 20px;
+  margin: 30px 0px;
+}
+
+section .text p:first-child {
+  color: white;
+  font-size: 1.9rem;
+  margin-left: 35px;
+  margin-bottom: 21px;
+}
+
+section .text p:last-child {
+  font-size: 1.5rem;
+  margin-left: 33px;
+  color: var(--Soft-blue);
+  margin-bottom: 35px;
+}
+
+section .days {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.33rem;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+section .days .eth img {
+  width: 15px;
+  margin-right: 9px;
+}
+section .days .eth span {
+  position: absolute;
+  top: 2px;
+  font-weight: bold;
+}
+section .days .eth {
+  margin-left: 30px;
+  color: var(--Cyan);
+}
+
+section .days .clock img {
+  width: 22px;
+  margin-right: 145px;
+}
+section .days .clock span {
+  position: absolute;
+  left: 346px;
+  color: var(--Soft-blue);
+}
+
+@media (max-width: 767px) {
+  section .days .clock img {
+    margin-right: 109px;
+  }
+  section .days .clock span {
+    left: 185px;
+    margin-left: 42px;
+  }
+}
+
+hr {
+  border-color: var(--Soft-blue);
+  opacity: 0.3;
+  margin: 0 40px;
+  margin-bottom: 18px;
+}
+
+section .footer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.footer .avatar {
+  width: 45px;
+  margin-left: 36px;
+  border: 1px solid white;
+  border-radius: 100%;
+}
+
+.footer .footer-text {
+  margin-left: 20px;
+  font-size: 1.2689rem;
+}
+@media (max-width: 767px) {
+  .footer .footer-text {
+    margin-left: 4px;
+  }
+}
+
+.footer .footer-text span:first-child {
+  color: var(--Soft-blue);
+}
+.footer .footer-text span:last-child {
+  color: var(--White);
+}
+.footer .footer-text span:last-child:hover {
+  color: var(--Cyan);
+  cursor: pointer;
+}

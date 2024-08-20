@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+
+:root {
+  /* Colors */
+
+  /* ### Primary */
+
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+
+  /* ### Neutral */
+  /* (paragraphs) */
+  --Transparent-white: hsla(0, 0%, 100%, 0.75);
+  /* (background, headings, buttons) */
+  --Very-light-gray: hsl(0, 0%, 95%);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+body {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  font-size: 14px;
+  font-family: "Lexend Deca", "Montserrat", sans-serif;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 50rem;
+  height: 400px;
+  /* border-radius: 30px; */
+}
+
+@media (max-width: 767px) {
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 50px;
+    height: 70%;
+  }
+}
+.card-one {
+  background-color: var(--Bright-orange);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .card-one {
+    margin-top: 300px;
+  }
+
+  .card-three {
+    margin-bottom: -95px;
+    border-top-right-radius:0;
+  }
+  .card-one,
+  .card-two,
+  .card-three {
+    padding-bottom: 128px;
+    border-radius: 0;
+  }
+}
+
+.card-one .btn {
+  color: var(--Bright-orange);
+}
+
+.img {
+  padding-bottom: 20px;
+  padding-top: 30px;
+  padding-left: 40px;
+}
+.head {
+  padding-bottom: 20px;
+  padding-left: 40px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.text {
+  padding-left: 40px;
+  font-size: 14px;
+  padding-right: 40px;
+  line-height: 1.6;
+  color: white;
+}
+
+.card-two {
+  background-color: var(--Dark-cyan);
+  position: relative;
+}
+
+.card-two .btn {
+  color: var(--Dark-cyan);
+}
+
+.card-three {
+  background-color: var(--Very-dark-cyan);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: relative;
+}
+.card-three .btn {
+  color: var(--Very-dark-cyan);
+}
+
+.btn {
+  font-weight: bold;
+  position: absolute;
+  bottom: 40px;
+  left: 36px;
+  padding: 15px;
+  width: 10px;
+  width: 124px;
+  border-style: none;
+  border-radius: 20px;
+}

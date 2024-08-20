@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Colors */
+
+  /* Primary */
+
+--Pale-blue: hsl(225, 100%, 94%);
+--Bright-blue: hsl(245, 75%, 52%);
+
+/* ### Neutral */
+
+--Very-pale-blue: hsl(225, 100%, 98%);
+--Desaturated-blue: hsl(224, 23%, 55%);
+--Dark-blue: hsl(223, 47%, 23%);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+body {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  display: grid;
+  place-content: center;
+  background: url(../images/pattern-background-desktop.svg);
+  background-color: var(--Pale-blue);
+  background-repeat: no-repeat;
+    background-size: contain;
+  min-height: 100vh;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+}
+
+section {
+  max-width: 33.5rem;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 25px 0 hsla(245, 75%, 52%, .11);
+      /* height: 613px; */
+}
+@media (max-width : 767px)
+{
+  /* 
+  @media (min-width: 450px) {
+
+  body {
+    background: url(images/pattern-background-desktop.svg), var(--clr-primary-pale-blue);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .title {
+    font-size: 1.7rem;
+    padding-top: 1.7em;
+    padding-bottom: .7em;
+  }
+
+  .text {
+    font-size: 1.05rem;
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+
+  .plan-box {
+    margin: 0 3em 2em 3em;
+    padding: 1.5em;
+  }
+
+  .plan-details h3 {
+    font-size: 1.05rem;
+  }
+
+  .plan-details p {
+    font-size: 1.05rem;
+  }
+
+  .plan-box-right a {
+    font-size: .9rem;
+  }
+
+  .btn {
+    margin-left: 3em;
+    margin-right: 3em;
+  }
+
+}
+
+  */
+}
+section .img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+
+section .text {
+  text-align: center;
+ padding: 25px;
+}
+
+section .text p:first-child{
+ color: var(--Dark-blue);
+    font-size: 2rem;
+    font-weight: 900;
+    padding: 25px;
+}
+
+section .text p:last-child{
+  color: var(--Desaturated-blue);
+  line-height: 1.6;
+    font-size: 1.5rem;
+}
+
+section .price{
+  background:var(--Very-pale-blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    margin-right: 40px;
+    margin-left: 40px;
+    padding: 28px 25px;
+    border-radius: 10px;
+}
+section .price .pp{
+      margin-right: 140px;
+}
+section .price .pp p:first-child{
+  font-weight: bold;
+    font-size: 1.4rem;
+    margin-bottom: 6px;
+}
+section .price .pp p:last-child {
+  font-size: 1.4rem;
+  color: var(--Desaturated-blue);
+  margin-left:2px;
+}
+
+.change{
+  font-size: 1rem;
+    color: blue;
+    text-decoration: underline;
+    font-weight: bold;
+    margin-bottom: 2px;
+    margin-right: 2px;
+}
+section .price .imgg{
+  height: 65px;
+  margin-right: 10px;
+
+}
+
+.buttonn{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 0.65em;
+    margin-bottom: 1.5em;
+    margin: 30px;
+    font-size: 20px;
+    
+}
+
+button{
+  all: unset;
+    display: block;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: .95rem;
+    font-weight: 700;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    padding: 1em
+}
+
+.top{
+  background: var(--Bright-blue);
+    color: white;
+    box-shadow: 0 15px 20px 0 hsla(245, 75%, 52%, .25);
+    opacity: 1;
+    transition: all .2s ease;
+}
+
+.top:hover {
+  opacity: .8;
+}
+
+
+.bottom{
+      color: var(--Desaturated-blue);
+    transition: color .2s ease;
+
+}
+
+.bottom:hover {
+  color: var(--Dark-blue);
+}
+
+

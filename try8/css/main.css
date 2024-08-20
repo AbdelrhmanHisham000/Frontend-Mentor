@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+
+:root {
+  /* Colors */
+
+  /* ### Primary */
+
+  --Very-Dark-Magenta: hsl(300, 43%, 22%);
+  --Soft-Pink: hsl(333, 80%, 67%);
+
+  /* ### Neutral */
+
+  --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+  --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+}
+
+.no-one {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .no-one {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.no-one .left-text {
+  margin: 100px;
+}
+@media (max-width: 767px) {
+  .no-one .left-text {
+    margin-bottom: 40px;
+  }
+}
+
+.no-one .left-text h2 {
+  font-size: 40px;
+  width: 330px;
+  margin-bottom: 25px;
+  color: var(--Very-Dark-Magenta);
+  font-weight: bold;
+}
+@media (max-width: 767px) {
+  .no-one .left-text h2 {
+    text-align: center;
+    width: 100%;
+    font-size: 49px;
+  }
+}
+
+.no-one .left-text p {
+  font-size: 18px;
+  width: 430px;
+  line-height: 1.4;
+  color: var(--Dark-Grayish-Magenta);
+}
+@media (max-width: 767px) {
+  .no-one .left-text p {
+    width: 101%;
+    text-align: center;
+    padding: 0 15px;
+  }
+}
+
+.right-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.right-text .first {
+  display: flex;
+  padding: 18px 50px;
+  margin-right: 300px;
+  margin-bottom: 20px;
+  background-color: var(--Light-Grayish-Magenta);
+  border-radius: 5px;
+}
+
+.right-text .second {
+  display: flex;
+  padding: 18px 50px;
+  margin-right: 145px;
+  margin-bottom: 20px;
+  background-color: var(--Light-Grayish-Magenta);
+  border-radius: 5px;
+}
+
+.right-text .third {
+  display: flex;
+  padding: 18px 50px;
+  margin-right: 35px;
+  background-color: var(--Light-Grayish-Magenta);
+  border-radius: 5px;
+}
+@media (max-width: 767px) {
+  .right-text .first,
+  .right-text .second,
+  .right-text .third {
+    margin-right: 0px;
+    padding: 30px;
+    display: block;
+    width: 100%;
+  }
+}
+
+.right-text .star-text {
+  margin-left: 30px;
+}
+.right-text .star-text p {
+  color: hsl(300, 43%, 22%);
+  font-weight: bold;
+}
+.right-text .stars {
+  margin-right: 5px;
+}
+
+.no-two {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .no-two {
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+    padding: 80px 10px;
+  }
+}
+
+/* card one */
+.no-two .card-one {
+  max-width: 25rem;
+  background-color: var(--Very-Dark-Magenta);
+  margin: 0 15px 40px;
+  border-radius: 10px;
+}
+.no-two .card-one .info {
+  display: flex;
+  position: relative;
+  margin-bottom: 0;
+}
+.no-two .card-one img {
+  width: 40px;
+  border-radius: 50%;
+  margin: 31px;
+}
+
+.no-two .card-one .final-text {
+  font-size: 20px;
+  margin: 0 15px 40px 15px;
+  color: white;
+  line-height: 1.5;
+}
+/* card one */
+
+/* card two */
+.no-two .card-two {
+  max-width: 25rem;
+  background-color: var(--Very-Dark-Magenta);
+  margin: 0 15px;
+  border-radius: 10px;
+}
+.no-two .card-two .info {
+  display: flex;
+  /* flex-direction: column; */
+  position: relative;
+}
+.no-two .card-two img {
+  width: 40px;
+  border-radius: 50%;
+  margin: 31px;
+}
+.no-two .card-two .final-text {
+  font-size: 20px;
+  margin: 0 15px 40px 15px;
+  color: white;
+  line-height: 1.5;
+}
+/* card two */
+
+/* card three */
+.no-two .card-three {
+  max-width: 25rem;
+  background-color: var(--Very-Dark-Magenta);
+  margin: 40px 15px 0px;
+  border-radius: 10px;
+}
+.no-two .card-three .info {
+  display: flex;
+  /* flex-direction: column; */
+  position: relative;
+}
+.no-two .card-three img {
+  width: 40px;
+  border-radius: 50%;
+  margin: 31px;
+}
+.no-two .card-three .final-text {
+  font-size: 20px;
+  margin: 0 15px 40px 15px;
+  color: white;
+  line-height: 1.5;
+}
+/* card three */
+
+/* all */
+.no-two .small-info p:first-child {
+  color: white;
+}
+.no-two .small-info p:last-child {
+  color: var(--Soft-Pink);
+}
+
+.no-two .small-info {
+  flex-direction: column;
+  position: absolute;
+  left: 25%;
+  top: 32%;
+}
+/* all */
